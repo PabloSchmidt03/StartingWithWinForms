@@ -7,6 +7,8 @@ namespace practica5
         public Form1()
         {
             InitializeComponent();
+
+
         }
 
         private bool validarCampos()
@@ -75,7 +77,7 @@ namespace practica5
                     nudEdad.Value.ToString(),
                     txtDireccion.Text
                 });
-
+                
                 lvResultado.Items.Add(item);
 
             }
@@ -84,6 +86,7 @@ namespace practica5
         private void Cancelar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bye!!");
+            //Cerrar form
             this.Close();
         }
     }
